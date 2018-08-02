@@ -261,7 +261,6 @@ nav h1 a {
     background: #0000ff none repeat scroll 0 0;
     height: 200px;
     width: 100%;
-    order: 2;
 }
 
 .inside #map {
@@ -271,7 +270,6 @@ nav h1 a {
 }
 
 .inside #footer {
-
     width: 100%;
 }
 
@@ -308,10 +306,6 @@ nav h1 a {
     width: 90%;
 }
 
-#restaurant-container {
-    order: 1;
-}
-
 #restaurant-container,
 #reviews-container {
     border-bottom: 1px solid #d9d9d9;
@@ -322,7 +316,6 @@ nav h1 a {
 
 #reviews-container {
     padding: 30px 40px 80px;
-    order: 3;
 }
 
 #reviews-container h2 {
@@ -354,10 +347,7 @@ nav h1 a {
     margin: 0 0 10px;
 }
 
-#restaurant-hours {
-    margin-left: auto; 
-    margin-right: auto;
-}
+
 
 #restaurant-hours td {
     color: #666;
@@ -380,6 +370,10 @@ nav h1 a {
     .filter-options h2 {
         width: 100%;
     }
+    
+    .inside #map-container {
+        height: 300px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -393,5 +387,86 @@ nav h1 a {
 
     .filter-options select {
         width: 25%;
+    }
+}
+
+/* Detailed view media queries */
+
+@media screen and (max-width: 700px) {
+    #restaurant-container {
+        order: 1;
+    }
+    
+    .inside #map-container {
+        order: 2;
+    }
+    
+    #reviews-container {
+        order: 3;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 999px) {
+    #breadcrumb {
+        padding: 10px 40px 16px;
+        list-style: none;
+        background-color: #eee;
+        font-size: 17px;
+        margin: 0;
+        width: calc(50% - 80px);
+        box-sizing: inherit;
+    }
+
+    .inside header {
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .inside #footer {
+        bottom: 0;
+        position: absolute;
+        width: 50%;
+        padding: 25px 0;
+    }
+
+    #restaurant-container {
+        padding-left: 1.1rem;
+        width: 50%;
+    }
+
+    #reviews-container {
+        padding-left: 1.1rem;
+        width: 45%;
+    }
+
+    .inside #map-container {
+        background: #0000ff none repeat scroll 0 0;
+        height: 87%;
+        position: fixed;
+        right: 0;
+        top: 80px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #map {
+        height: 400px;
+    }
+
+    .inside #map-container {
+        width: 100%;
+    }
+
+    #restaurant-container {
+        width: 40%;
+        border-right: 0px;
+        padding: 1rem 0 0 4rem;
+    }
+
+    #reviews-container {
+        width: 50%;
+        padding: 1rem 0;
     }
 }
