@@ -8,15 +8,13 @@ The goal of this project is to convert a static webpage to a mobile-ready web ap
 
 ## How to Install
 
-There are two ways to install the reader on local PC
+Get the project files:
 
 * Clone the [repository](https://github.com/puhundrik/udacity_feedreader_testing.git) to local PC.
 
 or
 
 * Download [zip-file](https://github.com/puhundrik/udacity_feedreader_testing/archive/master.zip) with repository, unpack the files to any folder
-
-Then just open index.html file in your favourite browser. When the page completes to load the results of the tests will appear at the bottom of the page.
 
 #### If you do not have local web-server
 
