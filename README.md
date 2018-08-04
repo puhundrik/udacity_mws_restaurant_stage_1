@@ -1,32 +1,38 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Frontend Nanodegree Feedreader
 
-## Project Overview: Stage 1
+## Project Overview
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+This is the project for Udacity Frontend Nanodegree Course.
 
-### Specification
+The goal of this project is to convert a static webpage to a mobile-ready web application. We take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. We also add a service worker to begin the process of creating a seamless offline experience for our users. 
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+## How to Install
 
-### What do I do from here?
+There are two ways to install the reader on local PC
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+* Clone the [repository](https://github.com/puhundrik/udacity_feedreader_testing.git) to local PC.
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+or
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+* Download [zip-file](https://github.com/puhundrik/udacity_feedreader_testing/archive/master.zip) with repository, unpack the files to any folder
 
-## Leaflet.js and Mapbox:
+Then just open index.html file in your favourite browser. When the page completes to load the results of the tests will appear at the bottom of the page.
 
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+#### If you do not have local web-server
 
-### Note about ES6
+1. In the folder with project, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
+In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+2. With your server running, visit the site: `http://localhost:8000`.
 
+#### If you have local web-server
+1. Put the project files to your web-server document root.
+2. Visit the site `http://localhost`.
 
+## REQUIREMENTS
 
+1. Python to run simple web-server.
+
+2. Browser with JavaScript enabled.
+
+3. Internet connection to load external scripts and fonts.
