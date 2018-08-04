@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* Common styles */
 body,
 td,
 th,
@@ -375,7 +376,7 @@ nav h1 a {
     font-style: italic;
 }
 
-/* Responsive media queries */
+/* Responsive media queries for main page */
 @media screen and (min-width: 449px) {
     .filter-options select {
         width: 37%;
@@ -412,7 +413,6 @@ nav h1 a {
 }
 
 /* Detailed view media queries */
-
 @media screen and (max-width: 700px) {
     #restaurant-container {
         order: 1;
