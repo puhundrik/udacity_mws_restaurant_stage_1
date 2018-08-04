@@ -292,7 +292,7 @@ nav h1 a {
     font-size: 20pt;
     font-weight: 200;
     letter-spacing: 0;
-    margin: 15px 0 30px;
+    margin: 15px 0 20px;
     text-transform: uppercase;
     line-height: 1.1;
 }
@@ -367,6 +367,14 @@ nav h1 a {
     padding-right: 15px;
 }
 
+.reviewer-name {
+    font-weight: 700;
+}
+
+.review-date {
+    font-style: italic;
+}
+
 /* Responsive media queries */
 @media screen and (min-width: 449px) {
     .filter-options select {
@@ -412,6 +420,14 @@ nav h1 a {
     
     .inside #map-container {
         order: 2;
+    }
+    
+    #restaurant-img {
+        width: 100%;
+    }
+    
+    #restaurant-cuisine {
+        width: 100%;
     }
     
     #reviews-container {
