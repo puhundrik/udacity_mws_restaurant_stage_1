@@ -167,17 +167,10 @@ createRestaurantHTML = (restaurant) => {
 
     const image = document.createElement('img');
     image.className = 'restaurant-img';
-    const imageSrc = DBHelper.imageUrlForRestaurant(restaurant);
-    image.className = 'restaurant-img'
-    const imgTemp = imageSrc.split('.'); 
-    // Create images path for srcset attribute
-    const img300 = `.${imgTemp[0]}-300_1x.${imgTemp[1]}`;
-    const img500 = `.${imgTemp[0]}-500_1x.${imgTemp[1]}`;
-    const img600 = `.${imgTemp[0]}-600_2x.${imgTemp[1]}`;
-    const img800 = `.${imgTemp[0]}-800_2x.${imgTemp[1]}`;
-    image.src = img800;
-    //Create srcset attribute
-    image.srcset = `${img300} 300w, ${img500} 500w, ${img600} 600w, ${img800} 800w`;
+    const imageUrls = DBHelper.imageUrlForRestaurant(restaurant);
+    image.className = 'restaurant-img';
+    image.src = imageUrls.src;
+    image.srcset = imageUrls.srcset;
     image.alt =`${restaurant.name} promotional image`;
     li.append(image);
 
