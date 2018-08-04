@@ -1,4 +1,4 @@
-# Frontend Nanodegree Feedreader
+# Frontend Nanodegree Restaurant Reviews
 
 ## Project Overview
 
@@ -28,6 +28,12 @@ In a terminal, check the version of Python you have: `python -V`. If you have Py
 #### If you have local web-server
 1. Put the project files to your web-server document root.
 2. Visit the site `http://localhost`.
+
+## Online version
+
+Click this url or copy and paste it to your favourite browser:
+
+[https://puhundrik.github.io/udacity_mws_restaurant_stage_1/](https://puhundrik.github.io/udacity_mws_restaurant_stage_1/)
 
 ## REQUIREMENTS
 
