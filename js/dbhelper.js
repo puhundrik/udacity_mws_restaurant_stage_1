@@ -150,12 +150,13 @@ class DBHelper {
      * Restaurant image URL.
      */
     static imageUrlForRestaurant(restaurant) {
+        // Prepare urls for src set
         const imgTempName = restaurant.photograph.split('.');
         const img300 = `./img/${imgTempName[0]}-300_1x.${imgTempName[1]}`;
         const img500 = `./img/${imgTempName[0]}-500_1x.${imgTempName[1]}`;
         const img600 = `./img/${imgTempName[0]}-600_2x.${imgTempName[1]}`;
         const img800 = `./img/${imgTempName[0]}-800_2x.${imgTempName[1]}`;
-        
+
         return {
             src: img800,
             srcset: `${img300} 300w, ${img500} 500w, ${img600} 600w, ${img800} 800w`
@@ -175,17 +176,6 @@ class DBHelper {
         });
         marker.addTo(newMap);
         return marker;
-    } 
-  /* static mapMarkerForRestaurant(restaurant, map) {
-    const marker = new google.maps.Marker({
-      position: restaurant.latlng,
-      title: restaurant.name,
-      url: DBHelper.urlForRestaurant(restaurant),
-      map: map,
-      animation: google.maps.Animation.DROP}
-    );
-    return marker;
-  } */
-
+    }
 }
 
