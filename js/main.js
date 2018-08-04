@@ -146,6 +146,13 @@ resetRestaurants = (restaurants) => {
  */
 fillRestaurantsHTML = (restaurants = self.restaurants) => {
     const ul = document.getElementById('restaurants-list');
+    if (restaurants.length === 0) {
+        let noResults = document.createElement("h1");
+        noResults.innerHTML = "Sorry, there are no results matching your criteria.";
+        noResults.setAttribute("tabindex", "0");
+        ul.appendChild(noResults);
+        return;
+    }
     restaurants.forEach(restaurant => {
         ul.append(createRestaurantHTML(restaurant));
     });
@@ -161,6 +168,7 @@ createRestaurantHTML = (restaurant) => {
     const image = document.createElement('img');
     image.className = 'restaurant-img';
     image.src = DBHelper.imageUrlForRestaurant(restaurant);
+    image.alt = restaurant.name + " restaurant promotional image";
     li.append(image);
 
     const name = document.createElement('h1');
@@ -178,6 +186,7 @@ createRestaurantHTML = (restaurant) => {
     const more = document.createElement('a');
     more.innerHTML = 'View Details';
     more.href = DBHelper.urlForRestaurant(restaurant);
+    more.setAttribute('aria-label', 'link to ' + restaurant.name + ' page');
     li.append(more);
 
     return li

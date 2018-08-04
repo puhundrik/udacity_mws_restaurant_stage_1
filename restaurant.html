@@ -15,12 +15,13 @@
 <body class="inside">
     <!-- Beginning header -->
     <header>
+        <a class="skip-link" href="#restaurant-container">Skip to restaurant details</a>
         <!-- Beginning nav -->
         <nav>
             <h1><a href="/">Restaurant Reviews</a></h1>
         </nav>
         <!-- Beginning breadcrumb -->
-        <ul id="breadcrumb" >
+        <ul id="breadcrumb" role="navigation" aria-label="Breadcrumbs">
             <li><a href="/">Home</a></li>
         </ul>
         <!-- End breadcrumb -->
@@ -29,24 +30,24 @@
     <!-- End header -->
 
     <!-- Beginning main -->
-    <main id="maincontent">
+    <main id="maincontent" aria-describedby="restaurant-name" role="main">
         <!-- Beginning map -->
-        <section id="map-container">
+        <section id="map-container" role="application" aria-label="MapBox Application">
             <div id="map"></div>
         </section>
         <!-- End map -->
         <!-- Beginning restaurant -->
-        <section id="restaurant-container">
-            <h1 id="restaurant-name"></h1>
+        <section id="restaurant-container" role="article" aria-label="Restaurant details" tabindex="0">
+            <h2 id="restaurant-name"></h1>
             <img id="restaurant-img">
             <p id="restaurant-cuisine"></p>
             <p id="restaurant-address"></p>
-            <table id="restaurant-hours"></table>
+            <table id="restaurant-hours" aria-label="Operating hours" role="table"></table>
         </section>
         <!-- end restaurant -->
         <!-- Beginning reviews -->
-        <section id="reviews-container">
-            <ul id="reviews-list"></ul>
+        <section id="reviews-container" role="article" aria-label="Restaurant reviews" tabindex="0">
+            <ul id="reviews-list" role="list" tabindex="0" aria-label="restaurant reviews list"></ul>
         </section>
         <!-- End reviews -->
     </main>
