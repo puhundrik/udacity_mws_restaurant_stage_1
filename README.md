@@ -10,11 +10,11 @@ The goal of this project is to convert a static webpage to a mobile-ready web ap
 
 Get the project files:
 
-* Clone the [repository](https://github.com/puhundrik/udacity_feedreader_testing.git) to local PC.
+* Clone the [repository](https://github.com/puhundrik/udacity_mws_restaurant_stage_1.git) to local PC.
 
 or
 
-* Download [zip-file](https://github.com/puhundrik/udacity_feedreader_testing/archive/master.zip) with repository, unpack the files to any folder
+* Download [zip-file](https://github.com/puhundrik/udacity_mws_restaurant_stage_1/archive/master.zip) with repository, unpack the files to any folder
 
 #### If you do not have local web-server
 
